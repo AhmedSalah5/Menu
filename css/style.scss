@@ -1,0 +1,44 @@
+@font-face {
+    font-family: JannaRegular;
+    src: url('../fonts/Janna\ LT\ Regular.ttf');
+}
+
+//Variables
+$color1: #630;
+$jannaFont: JannaRegular;
+
+//End Variables
+
+h2,h1 {
+    font-family: JannaRegular;
+    color: #630;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    direction: rtl;
+}
+
+.item{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 15px;
+    .image,.text{flex:1}
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
