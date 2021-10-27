@@ -5,13 +5,14 @@
 
 //Variables
 $color1: #630;
+$color2: #fcdae8;
 $jannaFont: JannaRegular;
 
 //End Variables
 
 h2,h1 {
     font-family: JannaRegular;
-    color: #630;
+    color: #000;
 }
 
 
@@ -36,8 +37,25 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        h2{
+            display: flex;
+            align-items: center;
+            .price{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                font-size: 1.4rem;
+                background: $color2;
+                border-radius: 50%;
+                line-height: 40px;
+                text-align: center;
+                margin: 0 10px;
+            }
+        }
+        
     }
     img{
         width: 100%;
     }
+    
 }

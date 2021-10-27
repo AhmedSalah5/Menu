@@ -5,7 +5,7 @@
 
 h2, h1 {
   font-family: JannaRegular;
-  color: #630;
+  color: #000;
 }
 
 * {
@@ -49,6 +49,27 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.item .text h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item .text h2 .price {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 1.4rem;
+  background: #fcdae8;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 10px;
 }
 
 .item img {
