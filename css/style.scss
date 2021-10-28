@@ -10,7 +10,7 @@ $jannaFont: JannaRegular;
 
 //End Variables
 
-h2,h1 {
+h2,h1,h3,h4 {
     font-family: JannaRegular;
     color: #000;
 }
@@ -29,30 +29,25 @@ body{
 .item{
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
     margin-bottom: 15px;
-    .image,.text{flex:1}
-    .text{
+    
+    h2{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        h2{
-            display: flex;
-            align-items: center;
-            .price{
-                display: inline-block;
-                width: 40px;
-                height: 40px;
-                font-size: 1.4rem;
-                background: $color2;
-                border-radius: 50%;
-                line-height: 40px;
-                text-align: center;
-                margin: 0 10px;
-            }
-        }
-        
+    }
+    .price{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
+        background: $color2;
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center;
+        margin: 0 3px;
     }
     img{
         width: 100%;
